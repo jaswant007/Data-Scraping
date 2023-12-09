@@ -63,7 +63,8 @@ async function automateLogin() {
         await page.waitForNavigation({ waitUntil: 'networkidle0' });
 
         // Take a screenshot as proof of login
-        await page.screenshot({ path: 'login-success.png' });
+        await page.waitForTimeout(1000 + Math.random() * 500);
+        await page.screenshot({ path: 'login-success_1.0.png' });
 
         console.log('Login successful, screenshot saved.');
 

@@ -4,7 +4,8 @@
   "description": "Currently to change the format from HAR file to a more readable CSV format",
   "main": "node.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "run-other": "node current_session"
   },
   "keywords": [],
   "author": "",
